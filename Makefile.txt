@@ -1,0 +1,10 @@
+# This is a Makkefile
+
+# Define a rule called all that builds the files in this directory
+
+all:
+	gcc -o benford benford.c -Wall -Werror
+	gcc -o generator generator.c -Wall -Werror
+
+clean:
+	rm benford generator
